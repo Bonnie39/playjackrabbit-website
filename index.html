@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jackrabbit Interactive</title>
+  <meta name="title" content="Bonnie Anderson" />
+  <meta name="description" content="My personal website" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="../media/image/icon.webp"/>
+  <link rel="apple-touch-icon" href="../media/image/icon.webp"/>
+  <link rel="icon" type="image/png" sizes="180x180" href="../media/image/favicon.webp"/>
+  <link rel="icon" type="image/x-icon" href="https://playjackrabbit.com/media/image/icon.webp">
+  <meta name="msapplication-TileImage" content="../media/image/icon.webp"/>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="webassets" />
+  <meta property="og:url" content="https://playjackrabbit.com" />
+  <meta property="og:title" content="Bonnie Anderson" />
+  <meta property="og:description" content="My personal website"/>
+  <meta property="og:image" content="https://playjackrabbit.com/img/meta.webp"/>
+    
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://playjackrabbit.com" />
+  <meta property="twitter:title" content="Bonnie Anderson" />
+  <meta property="twitter:description" content="My personal website"/>
+  <meta property="twitter:image" content="https://playjackrabbit.com/img/meta.webp"/>
+</head>
+<body>
+
+  <canvas id="geo"></canvas>
+
+  <nav>
+    <span class="nav-title">JACKRABBIT INTERACTIVE</span>
+    <div class="nav-icons">
+
+      <!-- Twitter / X -->
+      <a href="https://x.com/playjackrabbit" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Twitter / X" title="Twitter / X">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.26 5.632 5.904-5.632Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+
+      <!-- Mastodon -->
+      <a href="https://procursus.social/@jackrabbit" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Mastodon" title="Mastodon">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.327 8.566c0-4.339-2.843-5.61-2.843-5.61-1.433-.658-3.894-.935-6.451-.956h-.063c-2.557.021-5.016.298-6.45.956 0 0-2.843 1.272-2.843 5.61 0 .993-.019 2.181.012 3.441.103 4.243.778 8.425 4.701 9.463 1.809.479 3.362.579 4.612.51 2.268-.126 3.541-.809 3.541-.809l-.075-1.646s-1.621.511-3.441.449c-1.804-.062-3.707-.194-3.999-2.409a4.523 4.523 0 0 1-.04-.621s1.77.433 4.014.536c1.372.063 2.658-.08 3.965-.236 2.506-.299 4.688-1.843 4.962-3.254.434-2.223.398-5.424.398-5.424zm-3.353 5.59h-2.19V9.065c0-1.158-.487-1.745-1.463-1.745-1.078 0-1.618.7-1.618 2.081v3.013h-2.178V9.401c0-1.381-.54-2.081-1.618-2.081-.976 0-1.463.587-1.463 1.745v5.091H5.245V8.524c0-1.157.294-2.077.885-2.759.609-.682 1.405-1.031 2.393-1.031 1.143 0 2.008.44 2.571 1.32l.554.929.554-.929c.563-.88 1.428-1.32 2.571-1.32.988 0 1.784.349 2.393 1.031.591.682.885 1.602.885 2.759v5.632z"/>
+        </svg>
+      </a>
+
+      <!-- Bsky -->
+      <a href="https://bsky.app/profile/playjackrabbit.com" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Bluesky" title="Bluesky">
+        <svg version="1.1" aria-label="Bluesky" aria-hidden="" role="img" class="svgicon icon_bluesky" viewBox="0 0 16 16" width="21" height="21" fill="currentColor">
+            <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.697-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948Z"></path>
+        </svg>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@JackrabbitInteractive" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="YouTube" title="YouTube">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+      </a>
+
+      <!-- itch.io -->
+      <a href="https://bonniedev.itch.io/" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="itch.io" title="itch.io">
+        <svg version="1.1" height="18" aria-hidden="" width="21" role="img" class="svgicon icon_itchio_new" viewBox="0 0 262.728 235.452" fill="currentColor">
+            <path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z"></path>
+        </svg>
+      </a>
+
+    </div>
+  </nav>
+
+  <main>
+    <div class="video-wrap">
+ 
+      <video id="player" preload="metadata">
+        <source src="/media/video/sadsatan_trailer01_optimized.mp4" type="video/mp4">
+      </video>
+ 
+      <!-- Controls overlay -->
+      <div id="controls" class="controls">
+ 
+        <!-- Progress bar -->
+        <div id="progress-wrap" class="progress-wrap">
+          <div id="progress-bar" class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+            <div id="progress-thumb" class="progress-thumb"></div>
+          </div>
+        </div>
+ 
+        <div class="controls-row">
+ 
+          <!-- Play / Pause -->
+          <button id="btn-play" class="ctrl-btn" aria-label="Play">
+            <!-- Play icon -->
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            <!-- Pause icon -->
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+          </button>
+ 
+          <!-- Time -->
+          <span id="time-display" class="time-display">0:00 / 0:00</span>
+ 
+          <!-- Spacer -->
+          <div class="ctrl-spacer"></div>
+ 
+          <!-- Mute -->
+          <button id="btn-mute" class="ctrl-btn" aria-label="Mute">
+            <svg class="icon-vol" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"/>
+            </svg>
+            <svg class="icon-mute" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+              <path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+            </svg>
+          </button>
+ 
+          <!-- Volume slider -->
+          <input id="volume" class="volume-slider" type="range" min="0" max="1" step="0.02" value="1" aria-label="Volume">
+ 
+          <!-- Fullscreen -->
+          <button id="btn-fs" class="ctrl-btn" aria-label="Fullscreen">
+            <svg class="icon-fs" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+            </svg>
+            <svg class="icon-exit-fs" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+              <path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
+            </svg>
+          </button>
+ 
+        </div>
+      </div>
+ 
+      <!-- Big centre play button (shown before first play) -->
+      <div id="big-play" class="big-play">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+ 
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Jackrabbit Interactive. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
